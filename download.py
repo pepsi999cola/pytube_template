@@ -1,6 +1,6 @@
 from pytube import YouTube
 
-yt = YouTube('https://www.youtube.com/watch?v=pjSz0UkS5SU')  # 動画のurlを入力
+yt = YouTube('https://www.youtube.com/watch?v=')  # 動画のurlを入力
 
 (yt.streams
     .filter(progressive=True, file_extension='mp4')

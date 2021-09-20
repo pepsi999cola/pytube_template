@@ -1,7 +1,7 @@
 from pytube import Channel
 
 # channel_urlを入力
-c = Channel('https://www.youtube.com/channel/UCfvZempyFTpPlklLojBj0iQ/videos')
+c = Channel('https://www.youtube.com/channel/')
 
 print(f'Downloading videos by: {c.channel_name}')
 for video in c.videos:
