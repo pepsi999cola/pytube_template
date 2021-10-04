@@ -5,12 +5,11 @@ url = input('YoutubechannelのURLを入力してください:')
 c = Channel(url)
 
 print(f'Downloading videos by: {c.channel_name}')
+print(c.length)
+
 for video in c.videos:
     (video.streams
-          .filter(progressive=True, file_extension='mp4')
-          .desc()
-          .order_by('resolution')
-          .first()
-          .download()
+        .get_highest_resolution()
+        .download()
     )
     print(video.title)
