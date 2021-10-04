@@ -2,6 +2,7 @@ from pytube import Playlist
 
 p = Playlist('https://www.youtube.com/playlist?list=PLS1QulWo1RIaJECMeUT4LFwJ-ghgoSH6n')
 print(f'Downloading: {p.title}')
+print(p.length)
 
 for video in p.videos:
     (video.streams
