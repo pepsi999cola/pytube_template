@@ -12,5 +12,5 @@ for video in c.videos:
           .order_by('resolution')
           .first()
           .download()
-     )
+    )
     print(video.title)

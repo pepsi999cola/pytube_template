@@ -8,7 +8,7 @@ yt = YouTube('https://www.youtube.com/watch?v=')  # 動画のurlを入力
     .order_by('resolution')
     .first()
     .download()
- )
+)
 
 # caption = yt.captions.get_by_language_code('en')
 # caption = caption.xml_captions
