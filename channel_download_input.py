@@ -5,7 +5,6 @@ url = input('YoutubechannelのURLを入力してください:')
 c = Channel(url)
 
 print(f'Downloading videos by: {c.channel_name}')
-print(c.length)
 
 for video in c.videos:
     (video.streams
