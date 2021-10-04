@@ -1,6 +1,8 @@
 from pytube import Playlist
 
-p = Playlist('https://www.youtube.com/playlist?list=PLS1QulWo1RIaJECMeUT4LFwJ-ghgoSH6n')
+url = input('URLを入力してください:')
+p = Playlist(url)
+
 print(f'Downloading: {p.title}')
 print(p.length)
 

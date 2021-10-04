@@ -9,6 +9,10 @@
 download_input.py
 </br>
 channel_download_input.py
+</br>
+プレイリストでダウンロード
+</br>
+playlist_download_input.py
 
 ## install
 
